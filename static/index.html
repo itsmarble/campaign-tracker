@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Tür-zu-Tür Tracker Köln</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+    <style>
+        body { margin:0; font-family:sans-serif; }
+        #map { width: 100vw; height: 100vh; }
+        .infoPanel { position:absolute; top:10px; right:10px; background:white; padding:10px; z-index:1000; }
+        label { display:block; margin-top:5px; }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<div class="infoPanel">
+    <label>Team: <input id="teamInput" type="text"></label>
+    <label>Letzter Besuch: <input id="dateInput" type="date"></label>
+    <button id="saveBtn">Segment speichern</button>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
