@@ -34,7 +34,7 @@ def init_db():
     )
     db.commit()
 
-@app.before_first_request
+@app.before_serving
 def setup():
     init_db()
 
